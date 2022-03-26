@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: This is a payment stage table.
+    columns:
+      - name: payment_id
+        description: Primary key for stg_payments
+      - name: order_id
+        description: Order ID
+      - name: payment_method
+        description: Method of a payment made.
+      - name: amount
+        description: Amount of a payment made.
+      - name: status
+        description: '{{doc("payment_status")}}'
+      - name: created
+        description: Date and Time of a payment made.
+        
